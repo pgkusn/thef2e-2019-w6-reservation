@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+.btn {
+    padding: 16px 24px;
+    border: none;
+    background-color: #d8d8d8;
+    color: #6d7278;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    cursor: pointer;
+    &.primary {
+        background-color: #575757;
+        color: #fff;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.ivu-spin-fix {
+    height: 100vh;
+}
+.spin-icon-load {
+    color: #000;
+    animation: spin 1s linear infinite;
+    & + div {
+        margin-top: 5px;
+        color: #000;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
